@@ -1,0 +1,95 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-horizontal {
+    width: 40%;
+}
+
+.navbar {
+    margin-bottom: 10px !important;
+}
+
+.right {
+    float: right;
+}
+
+.payload {
+    margin-bottom: 2em;
+}
+
+.h1-bottom-border {
+    margin-top: 0.9em;
+    margin-bottom: 0.9em;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.payload-type {
+    margin-bottom: 0.5em;
+}
+
+.table > tbody > tr > td {
+    border: none;
+    cursor: pointer;
+}
+
+.table>thead>tr>th {
+    border: none;
+}
+
+.table > tbody > tr > th {
+    border: none;
+}
+
+.tooltip-inner {
+    min-width: 8em; /* the minimum width */
+    text-align: center;
+}
+
+.secondary-text {
+    font-size: 17px;
+}
+
+.secondary-text-modal {
+    font-size: 16px;
+}
+
+.raw-format {
+    max-height: 500px;
+    overflow-y: scroll;
+    cursor: text;
+}
+
+.popover {
+    max-width: 500px;
+}
+
+.description-link {
+    max-width: 250px;
+}
+
+.legth-limit {
+    float: right;
+}
+
+.modal-content {
+    cursor: default;
+}
+
+.modal-title {
+    cursor: text;
+}
+
+.admin-panel-form {
+    max-width: 50%;
+}
+
+.h4-title {
+    margin-bottom: 15px;
+}
+
+.settings-form {
+    padding-left: 0px;
+    max-width: 95%;
+}
