@@ -36,11 +36,12 @@
             <label>Type</label> <small class="legth-limit">140 symbols</small>
             <input type="text" name="type" class="form-control" placeholder="Javascript, XML, SVG, etc." maxlength="140">
         </div>
-        <div class="form-group">
+        <div class="form-group div-side-bar">
             <label>Payload</label>
             <textarea name="payload" class="form-control" rows="5" cols="100%"></textarea>
+            <small class="text-muted"><b>Notice:</b> <mark>[URL]</mark> in payload's text will replace to your payload address</small>
         </div>
-        <?php if($_SESSION['userdata'] === 'administration'): ?>
+        <?php if($_SESSION['userdata']['type'] === 'administrator'): ?>
         <div class="form-group">
             <div class="checkbox">
                 <label>

@@ -5,7 +5,7 @@
     <div class="col-md-8">
         <h3>Projects</h3>
         <div class="h1-bottom-border"></div>
-        <table class="table table-hover" id="example">
+        <table class="table table-hover" id="projects">
             <thead>
                 <tr>
                     <th scope="col">Name</th>
@@ -40,27 +40,3 @@
         </form>
     </div>
 </div>
-
-<!-- Settings for Datatabe -->
-<script>
-    $(document).ready(function() {
-        $('#example').DataTable({
-            "bPaginate": false,
-            "bLengthChange": false,
-            "bFilter": false,
-            "bInfo": false,
-            "bAutoWidth": false
-        });
-    } );
-</script>
-
-<!-- Clickable rows in table -->
-<script>
-    jQuery(document).ready(function($) {
-        $(".clickable-row").click(function() {
-            window.location = $(this).data("href");
-        });
-
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>

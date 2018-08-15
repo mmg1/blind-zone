@@ -85,6 +85,7 @@ class Links extends Controller {
 
                     if ($link) {
                         $data = $this->model->getRequests($link->id);
+                        $requests_data = array();
 
                         if ($data) {
                             $request_data = array();
@@ -102,6 +103,8 @@ class Links extends Controller {
                                 $request_data[$i]['user_agent'] = (!empty($client_data->user_agent))?$client_data->user_agent:'Empty user-agent';
                                 $request_data[$i]['html'] = (!empty($client_data->html))?$client_data->html:'Empty';
                                 $request_data[$i]['cookie'] = (!empty($client_data->cookie))?$client_data->cookie:'Empty cookies';
+                                $request_data[$i]['session_storage'] = (!empty($client_data->session_storage))?$client_data->session_storage:'Empty session storage';
+                                $request_data[$i]['local_storage'] = (!empty($client_data->local_storage))?$client_data->local_storage:'Empty local storage';
 
                                 // request's data
                                 $request = $this->model->getRequestDataById($data[$i]->id);
@@ -109,6 +112,7 @@ class Links extends Controller {
                                 $request_data[$i]['headers'] = json_decode((!empty($request->headers))?$request->headers:'{}', true);
                                 $request_data[$i]['ip'] = (!empty($request->ip))?$request->ip:'Empty IP';
 
+                                $requests_data[count($requests_data)] = $request_data[$i];
                             }
 
                         }

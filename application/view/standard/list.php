@@ -3,7 +3,7 @@
         <h3>All interactions</h3>
 
         <div class="h1-bottom-border"></div>
-        <table class="table table-hover" id="example">
+        <table class="table table-hover" id="list">
             <thead>
             <tr>
                 <th scope="col">Date</th>
@@ -25,6 +25,7 @@
                         <td>
                             <a
                                 data-toggle="popover"
+                                id="popover_link"
                                 data-placement="left"
                                 title="Headers"
                                 data-trigger="click"
@@ -82,45 +83,3 @@
         </table>
     </div>
 </div>
-
-<!-- Settings for Datatable -->
-<script>
-    $(document).ready(function() {
-
-        $('#example').DataTable({
-            "bPaginate": false,
-            "bLengthChange": false,
-            "bFilter": false,
-            "bInfo": false,
-            "bAutoWidth": false,
-            "ordering": true,
-            columnDefs: [{
-                orderable: false,
-                targets: "no-sort"
-            }]
-        });
-    } );
-</script>
-
-<!-- Clickable rows in table -->
-<script>
-    jQuery(document).ready(function($) {
-        $(".clickable-row").click(function() {
-            window.location = $(this).data("href");
-        });
-
-        $('[data-toggle="popover"]').popover();
-
-        $(document).on('click', function (e) {
-            $('[data-toggle="popover"],[data-original-title]').each(function () {
-                //the 'is' for buttons that trigger popups
-                //the 'has' for icons within a button that triggers a popup
-                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-                    (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
-                }
-
-            });
-        });
-
-    });
-</script>

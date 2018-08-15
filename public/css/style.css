@@ -93,3 +93,11 @@ body {
     padding-left: 0px;
     max-width: 95%;
 }
+
+div.dataTables_paginate {
+    text-align: center !important;
+}
+
+.div-side-bar {
+    margin-bottom: 10px;
+}
