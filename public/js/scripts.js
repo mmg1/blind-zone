@@ -17,8 +17,13 @@ $("#login").submit(function(event){
 		if(data){
 			if(data.boolean == true)
                 window.location = '/';
-            else
-                alert(data.status);
+            else {
+                if (data.status == null)
+                    alert('Unknown error, pls check your request and try again!');
+                else
+                    alert(data.status);
+            }
+
 		}
 	});
 });

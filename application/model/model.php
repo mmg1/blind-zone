@@ -222,7 +222,7 @@ class Model
     }
 
     public function getClientDataById($id){
-        $sql = "SELECT user_agent, html, url, cookie FROM ClientData WHERE request = :id";
+        $sql = "SELECT user_agent, html, url, cookie, session_storage, local_storage FROM ClientData WHERE request = :id";
         $query = $this->db->prepare($sql);
         $parameters = array('id' => $id);
 
