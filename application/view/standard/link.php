@@ -90,13 +90,13 @@
         <div class="h1-bottom-border"></div>
         <div>
             <div class="div-side-bar">
-                <strong style="font-size:  16px;">Name: </strong>
+                <strong class="strong-side-bar">Name: </strong>
                 <?php echo htmlspecialchars($link->name); ?>
             </div>
         </div>
         <div>
             <div class="div-side-bar">
-                <strong style="font-size:  16px;">Description: </strong>
+                <strong class="strong-side-bar">Description: </strong>
                 <?php echo htmlspecialchars($link->description); ?>
             </div>
         </div>
@@ -106,16 +106,6 @@
             </div>
             <small class="text-muted"><b>Notice:</b> You can see your payload by this URL</small>
         </div>
-        <?php /*
-        <div>
-            <div style="margin-bottom:  10px;">
-                <strong>Payload: </strong>
-                    <div class="form-group" style="margin-top: 10px;">
-                        <textarea name="payload" class="form-control" placeholder="Payload" rows="5" cols="100%"></textarea>
-                    </div>
-            </div>
-        </div>
-        */ ?>
     </div>
 </div>
 
