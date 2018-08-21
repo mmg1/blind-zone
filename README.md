@@ -1,5 +1,7 @@
 # Blind Zone
 
+[![version](https://img.shields.io/badge/version-0.9.0-blue.svg)](https://github.com/xymfrx/blind-zone) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xymfrx/blind-zone/blob/master/LICENSE)
+
 Tool for testing blind XSS. Easy to install and manage.
 
 #### Feautures
