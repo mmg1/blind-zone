@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  web:
+    container_name: blindzone
+    build: .
+    ports:
+      - "8000:80"
+  db:
+    container_name: blindzone_db
+    build:
+      context: ./
+      dockerfile: DockerfileDB
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: chang3_m3_p13a$e
